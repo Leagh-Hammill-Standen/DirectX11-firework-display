@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Direct3DSetup.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Utility\Input.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Timer.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CMatrix4x4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CVector2.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CVector3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Utility\GraphicsHelpers.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="External\imgui-master\examples\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui-master\examples\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui-master\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui-master\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui-master\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui-master\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Direct3DSetup.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Utility\ColourRGBA.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Input.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Timer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CMatrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CVector2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CVector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathHelpers.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Utility\GraphicsHelpers.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{3b75a466-1b3f-44db-90a2-73a9bfc56583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1d198607-cf52-46a9-8994-554d241d97a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{739716ac-bd96-4e4c-b3a2-61c7fdfdea4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{f42124bf-c548-412a-a5e3-b42dee88c4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Model Shaders">
+      <UniqueIdentifier>{724ffeae-98ed-4815-bb32-1e911dea6751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Firework Shaders">
+      <UniqueIdentifier>{e2c80532-900e-49bd-818b-689c9d8006c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common.hlsli">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="FireworkPassThru_vs.hlsl">
+      <Filter>Shaders\Firework Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="FireworkRender_gs.hlsl">
+      <Filter>Shaders\Firework Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelLighting_ps.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelLighting_vs.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SingleColourTexture_ps.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="WorldTransformOnly_vs.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BasicTransform_vs.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ColourTexture_ps.hlsl">
+      <Filter>Shaders\Model Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
